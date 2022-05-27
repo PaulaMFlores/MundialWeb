@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&family=Average+Sans&family=Gotu&display=swap"
+            rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d0716bf16d.js" crossorigin="anonymous"></script>
+        <title>MundialWeb</title>
+        <link rel="icon" href="img/logo.png">
+       
+    
+    </head>
+    
+    <body>
+        <header>
+            <div class="header-logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo MundialWeb" id="logo"></a>
+            </div>
+    
+            <div class="header-titulo">
+                <h1>MundialWeb</h1>
+            </div>
+    
+            <nav class="header-menubar">
+                <ul>
+                    <li> <a href="index.html">Inicio</a> </li>
+                    <li><a href="historia.html"> Historia</a></li>
+                    <li> <a href="prode.html">PRODE</a></li>
+                    
+                </ul>
+    
+            </nav>
+    
+            <ul class="header-menu-oculto">
+                <div class="header-menu-oculto-boton">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="header-menu-oculto-container">
+                    <li><a href="index.html">Inicio</a> </li>
+                    <li><a href="historia.html"> Historia</a></li>
+                    <li> <a href="prode.html">PRODE</a></li>
+                    
+                </div>
+            </ul>
+    
+        </header>
+
+    <div class="relleno"></div>
+
+    <main>
+
+        <section class="prode-intro">
+            <h2>¡Sumate al concurso!</h2>
+            <p>Completá el fixture y envianos tus pronósticos. Nos asociamos con importantes marcas para traer el mejor
+                regalo al ganador: <br> <b>un viaje para ver la final de la Copa del Mundo de Qatar 2022! </b><sup>1</sup></p>
+        </section>
+
+        <form name="prode" action="" method="get" target="" id="prode">
+
+            <div class="prode-datosContainer">
+                <label  for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="Nombre" maxlength="30" > <br>
+                <label  for="Apellido">Apellido:</label>
+                <input type="text" name="Apellido" id="Apellido" maxlength="30"><br>
+                <label  for="Email">Correo Electrónico:</label>
+                <input type="email" name="Email" id="Email" size="31em"><br>
+                <label  for="TermnsConditions">Acepto los términos y condiciones:</label>
+                <input type="checkbox" name="TermnsConditions" id="TermsConditions" ><br><br>
+            </div>
+
+            <div class="prode-fixture-container">
+
+                <section class="prode-fixture-container-item">
+                    <div class="prode-fixture-item-title">
+                        Grupo A
+                    </div>
+                    <div>
+
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Qatar1">Qatar</label>
+                            <input type="number" id="Qatar1" min="0" max="20" >
+                            <input type="number" id="Ecuador1" min="0" max="20" >
+                            <label for="Ecuador1">Ecuador</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Senegal1">Senegal</label>
+                            <input type="number" id="Senegal1" min="0" max="20" >
+                            <input type="number" id="PaisesBajos1" min="0" max="20" >
+                            <label for="PaisesBajos1">Países Bajos</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Qatar2">Qatar</label>
+                            <input type="number" id="Qatar2" min="0" max="20" >
+                            <input type="number" id="Senegal2" min="0" max="20" >
+                            <label for="Senegal2">Senegal</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="PaisesBajos2">Países Bajos</label>
+                            <input type="number" id="PaisesBajos2" min="0" max="20" >
+                            <input type="number" id="Ecuador2" min="0" max="20" >
+                            <label for="Ecuador2">Ecuador</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="PaisesBajos3">Países Bajos</label>
+                            <input type="number" id="PaisesBajos3" min="0" max="20" >
+                            <input type="number" id="Qatar3" min="0" max="20" >
+                            <label for="Qatar3">Qatar</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Ecuador3">Ecuador</label>
+                            <input type="number" id="Ecuador3" min="0" max="20" >
+                            <input type="number" id="Senegal3" min="0" max="20" >
+                            <label for="Senegal3">Senegal</label>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="prode-fixture-container-item">
+                    <div class="prode-fixture-item-title">
+                        Grupo B
+                    </div>
+                    <div>
+
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Inglaterra1">Inglaterra</label>
+                            <input type="number" id="Inglaterra1" min="0" max="20" >
+                            <input type="number" id="Iran1" min="0" max="20" >
+                            <label for="Iran1">Irán</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="EEUU1">EE.UU.</label>
+                            <input type="number" id="EEUU1" min="0" max="20" >
+                            <input type="number" id="Repechaje11" min="0" max="20" >
+                            <label for="Repechaje11"> Repechaje 1</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Inglaterra2">Inglaterra</label>
+                            <input type="number" id="Inglaterra2" min="0" max="20" >
+                            <input type="number" id="EEUU2" min="0" max="20" >
+                            <label for="EEUU2">EE.UU.</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Repechaje12">Repechaje 1</label>
+                            <input type="number" id="Repechaje12" min="0" max="20" >
+                            <input type="number" id="Iran2" min="0" max="20" >
+                            <label for="Iran2">Irán</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Repechaje13">Repechaje 1</label>
+                            <input type="number" id="Repechaje13" min="0" max="20" >
+                            <input type="number" id="Inglaterra3" min="0" max="20" >
+                            <label for="Inglaterra3">Inglaterra</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Iran3">Irán</label>
+                            <input type="number" id="Iran3" min="0" max="20" >
+                            <input type="number" id="EEUU3" min="0" max="20" >
+                            <label for="EEUU3">EE.UU.</label>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <section class="prode-fixture-container-item">
+                    <div class="prode-fixture-item-title">
+                        Grupo C
+                    </div>
+                    <div>
+
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Argentina1">Argentina</label>
+                            <input type="number" id="Argentina1" min="0" max="20" >
+                            <input type="number" id="ArabiaSaudita1" min="0" max="20" >
+                            <label for="ArabiaSaudita1">A. Saudita</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Mexico1">México</label>
+                            <input type="number" id="Mexico1" min="0" max="20" >
+                            <input type="number" id="Polonia1" min="0" max="20" >
+                            <label for="Polonia1">Polonia</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Argentina2">Argentina</label>
+                            <input type="number" id="Argentina2" min="0" max="20" >
+                            <input type="number" id="Mexico2" min="0" max="20" >
+                            <label for="Mexico2">México</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Polonia2">Polonia</label>
+                            <input type="number" id="Polonia2" min="0" max="20" >
+                            <input type="number" id="ArabiaSaudita2" min="0" max="20" >
+                            <label for="ArabiaSaudita2">A. Saudita</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Polonia3">Polonia</label>
+                            <input type="number" id="Polonia3" min="0" max="20" >
+                            <input type="number" id="Argentina3" min="0" max="20" >
+                            <label for="Argentina3">Argentina</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="ArabiaSaudita3">A. Saudita</label>
+                            <input type="number" id="ArabiaSaudita3" min="0" max="20" >
+                            <input type="number" id="Mexico3" min="0" max="20" >
+                            <label for="Mexico3">México</label>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <section class="prode-fixture-container-item">
+                    <div class="prode-fixture-item-title">
+                        Grupo D
+                    </div>
+                    <div>
+
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Francia1">Francia</label>
+                            <input type="number" id="Francia1" min="0" max="20" >
+                            <input type="number" id="Repechaje21" min="0" max="20" >
+                            <label for="Repechaje21">Repechaje 2</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Dinamarca1">Dinamarca</label>
+                            <input type="number" id="Dinamarca1" min="0" max="20" >
+                            <input type="number" id="Tunez1" min="0" max="20" >
+                            <label for="Tunez1">Túnez</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Francia2">Francia</label>
+                            <input type="number" id="Francia2" min="0" max="20" >
+                            <input type="number" id="Dinamarca2" min="0" max="20" >
+                            <label for="Dinamarca2">Dinamarca</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Tunez2">Túnez</label>
+                            <input type="number" id="Tunez2" min="0" max="20" >
+                            <input type="number" id="Repechaje22" min="0" max="20" >
+                            <label for="Repechaje22">Repechaje 2</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Tunez3">Túnez</label>
+                            <input type="number" id="Tunez3" min="0" max="20" >
+                            <input type="number" id="Francia3" min="0" max="20" >
+                            <label for="Francia3">Francia</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Repechaje23">Repechaje 2</label>
+                            <input type="number" id="Repechaje23" min="0" max="20" >
+                            <input type="number" id="Dinamarca3" min="0" max="20" >
+                            <label for="Dinamarca3">Dinamarca</label>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="prode-fixture-container-item">
+                    <div class="prode-fixture-item-title">
+                        Grupo E
+                    </div>
+                    <div>
+
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="España1">España</label>
+                            <input type="number" id="España1" min="0" max="20" >
+                            <input type="number" id="Repechaje31" min="0" max="20" >
+                            <label for="Repechaje31">Repechaje 3</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Alemania1">Alemania</label>
+                            <input type="number" id="Alemania1" min="0" max="20" >
+                            <input type="number" id="Japon1" min="0" max="20" >
+                            <label for="japon1">Japón</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="España2">España</label>
+                            <input type="number" id="España2" min="0" max="20" >
+                            <input type="number" id="Alemania2" min="0" max="20" >
+                            <label for="Alemania2">Alemania</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Japon2">Japón</label>
+                            <input type="number" id="Japon2" min="0" max="20" >
+                            <input type="number" id="Repechaje32" min="0" max="20" >
+                            <label for="Repechaje32">Repechaje 3</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Japon3">Japón</label>
+                            <input type="number" id="Japon3" min="0" max="20" >
+                            <input type="number" id="España3" min="0" max="20" >
+                            <label for="España3">España</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Repechaje33">Repechaje 3</label>
+                            <input type="number" id="Repechaje33" min="0" max="20" >
+                            <input type="number" id="Alemania3" min="0" max="20" >
+                            <label for="Alemania3">Alemania</label>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="prode-fixture-container-item">
+                    <div class="prode-fixture-item-title">
+                        Grupo F
+                    </div>
+                    <div>
+
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Belgica1">Bélgica</label>
+                            <input type="number" id="Belgica1" min="0" max="20" >
+                            <input type="number" id="Canada1" min="0" max="20" >
+                            <label for="Canada1">Canadá</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Marruecos1">Marruecos</label>
+                            <input type="number" id="Marruecos1" min="0" max="20" >
+                            <input type="number" id="Croacia1" min="0" max="20" >
+                            <label for="Croacia1"> Croacia </label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Belgica2">Bélgica</label>
+                            <input type="number" id="Belgica2" min="0" max="20" >
+                            <input type="number" id="Marruecos2" min="0" max="20" >
+                            <label for="Marruecos2">Marruecos</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Croacia2">Croacia</label>
+                            <input type="number" id="Croacia2" min="0" max="20" >
+                            <input type="number" id="Canada2" min="0" max="20" >
+                            <label for="Canada2">Canadá</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Croacia3">Croacia</label>
+                            <input type="number" id="Croacia3" min="0" max="20" >
+                            <input type="number" id="Belgica3" min="0" max="20" >
+                            <label for="Belgica3">Bélgica</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Canada3">Canadá</label>
+                            <input type="number" id="Canada3" min="0" max="20" >
+                            <input type="number" id="Marruecos3" min="0" max="20" >
+                            <label for="Marruecos3">Marruecos</label>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <section class="prode-fixture-container-item">
+                    <div class="prode-fixture-item-title">
+                        Grupo G
+                    </div>
+                    <div>
+
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Brasil1">Brasil</label>
+                            <input type="number" id="Brasil1" min="0" max="20" >
+                            <input type="number" id="Serbia1" min="0" max="20" >
+                            <label for="Serbia1">Serbia</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Suiza1">Suiza</label>
+                            <input type="number" id="Suiza1" min="0" max="20" >
+                            <input type="number" id="Camerún1" min="0" max="20" >
+                            <label for="Camerún1">Camerún</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Brasil2">Brasil</label>
+                            <input type="number" id="Brasil2" min="0" max="20" >
+                            <input type="number" id="Suiza2" min="0" max="20" >
+                            <label for="Suiza2">Suiza</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Camerún2">Camerún</label>
+                            <input type="number" id="Camerún2" min="0" max="20" >
+                            <input type="number" id="Serbia2" min="0" max="20" >
+                            <label for="Serbia2">Serbia</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Camerún3">Camerún</label>
+                            <input type="number" id="Camerún3" min="0" max="20" >
+                            <input type="number" id="Brasil3" min="0" max="20" >
+                            <label for="Brasil3">Brasil</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Serbia3">Serbia</label>
+                            <input type="number" id="Serbia3" min="0" max="20" >
+                            <input type="number" id="Suiza3" min="0" max="20" >
+                            <label for="Suiza3">Suiza</label>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <section class="prode-fixture-container-item">
+                    <div class="prode-fixture-item-title">
+                        Grupo H
+                    </div>
+                    <div>
+
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Portugal1">Portugal</label>
+                            <input type="number" id="Portugal1" min="0" max="20" >
+                            <input type="number" id="Ghana1" min="0" max="20" >
+                            <label for="Ghana1">Ghana</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Uruguay1">Uruguay</label>
+                            <input type="number" id="Uruguay1" min="0" max="20" >
+                            <input type="number" id="CoreaDelSur1" min="0" max="20" >
+                            <label for="CoreaDelSur1">Corea d/Sur</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Portugal2">Portugal</label>
+                            <input type="number" id="Portugal2" min="0" max="20" >
+                            <input type="number" id="Uruguay2" min="0" max="20" >
+                            <label for="Uruguay2">Uruguay</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="CoreaDelSur2">Corea d/Sur</label>
+                            <input type="number" id="CoreaDelSur2" min="0" max="20" >
+                            <input type="number" id="Ghana2" min="0" max="20" >
+                            <label for="Ghana2">Ghana</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="CoreaDelSur3">Corea d/Sur</label>
+                            <input type="number" id="CoreaDelSur3" min="0" max="20" >
+                            <input type="number" id="Portugal3" min="0" max="20" >
+                            <label for="Portugal3">Portugal</label>
+                        </div>
+                        <div class="prode-fixture-item-row">
+                            <label class="izq" for="Ghana3">Ghana</label>
+                            <input type="number" id="Ghana3" min="0" max="20" >
+                            <input type="number" id="Uruguay3" min="0" max="20" >
+                            <label for="Uruguay3">Uruguay</label>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+            <br>
+
+            <div class="fixture-botones">
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="BORRAR">
+            </div>
+            <br>
+            
+        </form>
+
+            <hr style="margin: 0 5vw">
+
+            <section class="prode-marcasAuspiciantes">
+                <p>Nuestras alianzas para lograr este premio:</p>
+
+                <div class="prode-marcasLogo">
+                    <div><img src="img/qatar.png" alt=""></div>
+                    <div><img src="img/cocacola.png" alt=""></div>
+                    <div><img src="img/emirates.png" alt=""></div>
+                    <div><img src="img/adidas.png" alt=""></div>
+                    <div><img src="img/tesla.png" alt=""></div>
+                </div>
+
+            </section>
+
+      
+
+
+    </main>
+
+
+
+    <footer>
+
+
+        <p class="footer-name">MundialWeb</p>
+       
+
+        <div class="footer-container">
+
+            <nav class="footer-navMenu">
+                <li><a href="index.html">Inicio</a> </li>
+                <li><a href="historia.html"> Historia</a></li>
+                <li> <a href="prode.html">PRODE</a></li>
+                <li><a href="">Términos y condiciones</a></li>
+                <li><a href="">Política de Privacidad</a></li>
+            </nav>
+            <section class="footer-socialMedia">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </section>
+
+
+
+        </div> 
+
+
+    </footer>
+    <script src="/scripts.js"></script>
+   
+</body>
+
+</html>

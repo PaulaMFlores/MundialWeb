@@ -1,0 +1,880 @@
+* {
+    padding: 0;
+    font-family: 'Gotu', sans-serif;
+    box-sizing: border-box;
+}
+
+/*fonts font-family: 'Average Sans', sans-serif;
+font-family: 'Gotu', sans-serif;
+font-family: 'Alegreya Sans SC', sans-serif;*/
+
+body {
+    /* background-color: rgb(231, 233, 214);
+    min-width: 250px; no me anda y nose por que.
+     Quiero que a menos de 250px no se achique mas*/
+    margin: 0;
+    height: 100vh;
+}
+
+
+header,
+main,
+section,
+article,
+aside {
+    /* border: 3px red solid;*/
+    min-height: 15vh;
+    /*margin: 0.2rem;
+    padding: 0.2rem;*/
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* ----------------------------HEADER----------------------------- */
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 60% 40%;
+    grid-gap: 2px 2px;
+    box-shadow: 1px 1px 5px gray;
+    padding: 0;
+    margin: 0;
+    max-height: 15vh;
+    width: 100%;
+    align-content: center;
+    background-color: #22114a;
+    color: aliceblue;
+    font-family: 'Average Sans', sans-serif;
+    opacity: 0.9;
+    /*como hago para que el titulo no se ponga transparente?*/
+    top: 0px;
+    position: fixed;
+    z-index: 105;
+
+}
+
+.header-logo,
+.header-titulo,
+.header-menubar {
+    /*border: 2px lightgray solid; */
+    align-self: center;
+    padding: 5px;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.header-logo {
+    grid-row: 1 / 3;
+    max-width: 100%;
+    max-height: 15vh;
+    align-content: space-around;
+
+}
+
+#logo {
+    max-height: 13vh;
+    color: #fff;
+}
+
+.header-titulo {
+    text-align: center;
+    opacity: 1;
+    padding: 0;
+    /*COMO CENTRO EL TITULO Y EL NAV AL CENTRO DE LA PANTALLA PESE A QUE TENGO EL LOGO?*/
+}
+
+.header-titulo h1 {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    letter-spacing: 5px;
+}
+
+.header-menubar {
+    grid-column: 2 / 3;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header-menubar ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+.header-menubar li {
+    display: inline-block;
+    color: aliceblue;
+    opacity: 1;
+    margin: 2px 3.5vw;
+}
+
+header ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.2rem 0.5;
+    border-radius: 5px;
+}
+
+header ul li a:hover {
+    color: #7d81b8;
+    opacity: 0.7;
+}
+
+header a:visited {
+    color: aliceblue;
+}
+
+.header-menu-oculto {
+    display: none;
+    /*border: 2px lightgray solid; */
+}
+
+/* ----------------------------JUMBO--------------------------- */
+
+.relleno {
+    min-height: 15vh;
+}
+
+.jumbo {
+    position: relative;
+    padding: 0;
+    height: 75%;
+    /* background-color: #750435;*/
+    color: #ffffff;
+    box-shadow: 1px 1px 5px grey;
+    background-image: url(img/teahub.io-qatar-wallpaper-hd-3109296.jpg);
+    background-size: cover;
+    background-position: 0 70%;
+}
+
+.jumbo-inside {
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 0%);
+    transition: 1s;
+    z-index: 1;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.jumbo-inside:hover {
+    background-color: rgb(0 0 0 / 30%);
+    transition: 1s;
+}
+
+/*.jumbo-img-logo, .jumbo-h2,.countdown {
+    border: #750435 2px solid;
+}*/
+
+.jumbo-img-logo {
+    padding: 5vh;
+    z-index: 2;
+    box-sizing: border-box;
+    max-width: 60vh;
+    max-height: 100%;
+    align-self: center;
+}
+
+.jumbo-h2 {
+    align-self: center;
+    padding: 0;
+    margin: 7vh;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 3px;
+    font-size: 2.2em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.countdown {
+    color: #ffffff;
+    pad: 3vh;
+    align-self: center;
+}
+
+.countdown-2 {
+    display: none;
+}
+
+.countdown iframe {
+    align-self: center;
+}
+
+.historia-poster {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    height: 50%;
+    color: #ffffff;
+    box-shadow: 1px 1px 5px grey;
+    background-image: url(img/header-l.jpeg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.historia-titulo {
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: 1000;
+    background-color: #2a9d8f;
+    padding: 1vh 3vw;
+    border-radius: 30px;
+    z-index: 2;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -30px;
+    box-shadow: 1px 1px 5px grey;
+}
+
+.separador {
+    height: 40px;
+}
+
+/* ------------------------------MAIN----------------------------- */
+
+
+
+/*------------------------Main en Index---------------------------*/
+
+.index-title-seccion>p {
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 30px;
+    color: #0b0b0c;
+}
+
+.index-section-articles {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto;
+    width: 1;
+    gap: 4px 14px;
+    box-sizing: border-box;
+    margin: 5vh 6vw;
+    background-color: #ffffff;
+}
+
+.index-section-article-item {
+    /* box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.532);*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.big-item {
+    grid-row: 1 / 3;
+    grid-column: 2/3;
+}
+
+.index-img {
+    width: 1;
+}
+
+.index-img-description {
+    margin: 0;
+    padding: 0;
+}
+
+.index-img-description>a {
+    text-decoration: none;
+    color: black;
+}
+
+.index-img-description>a:hover {
+    text-decoration: underline;
+}
+
+.index-img-description h4 {
+    margin: 5% 2% 3%;
+    padding: 0;
+    font-size: auto;
+    font-weight: 700;
+    font-family: 'Alegreya Sans SC', sans-serif;
+
+}
+
+.index-img-description>p {
+    font-size: smaller;
+    line-height: 16px;
+    padding: 0 3px;
+}
+
+.index-banner {
+    height: 30vh;
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-banner p {
+    font-family: 'Average Sans', sans-serif;
+    letter-spacing: 5px;
+    padding: 3vw;
+}
+
+.index-section-2-iframe {
+    width: 100%;
+    display: flex;
+}
+
+.iframe-video-canciones {
+    justify-content: center;
+    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+}
+
+
+/*------------------------Main en Historia-------------------------*/
+.historia-contenedor {
+    background-color: #ffffff;
+    box-sizing: content-box;
+    width: 1;
+    height: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4vh 2vw;
+    margin: 3vh 4vw;
+    padding: 2vw;
+
+}
+
+.historia-item {
+    display: grid;
+    grid-template-rows: 80% 20%;
+    max-width: 300px;
+    height: 55vh;
+    width: 40vw;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 0.5vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, 0) 80%, #00000053);
+
+}
+
+.historia-item>div>img {
+    max-width: 100%;
+    max-height: 40vh;
+    object-fit: contain;
+    align-self: center;
+
+}
+
+.historia-item p {
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 1.5em;
+    color: #0b0b0c;
+}
+
+
+/*--------------------------Main en PRODE---------------------------*/
+
+
+
+.prode-intro {
+    text-align: center;
+    margin: 2px 10px;
+}
+
+.prode-datosContainer {
+    text-align: center;
+
+}
+
+.prode-fixture-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+
+}
+
+.prode-fixture-container-item {
+    box-shadow: 1px 1px 5px gray;
+    margin: 10px;
+
+}
+
+.prode-fixture-item-title {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    background-color: #f4a261;
+    margin-bottom: 2px;
+    color: #ffffff;
+}
+
+.prode-fixture-item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+
+}
+
+.izq {
+    text-align: end;
+}
+
+.prode-fixture-item-row>label {
+    width: 6em;
+    margin: 0 0.3em;
+}
+
+.prode-fixture-item-row>input {
+    text-align: center;
+    width: 2em;
+    text-align: center;
+    margin: 1px 1px;
+}
+
+input,
+label {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fixture-botones {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    column-gap: 5vw;
+
+}
+
+.fixture-botones>input {
+    padding: 3px 3em;
+    background-color: transparent;
+    border: solid #e76f51 3px;
+    color: #e76f51;
+    border-radius: 8px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    box-shadow: 1px 1px 5px #e76f51;
+}
+
+.fixture-botones>input:hover {
+    animation-name: expandButton;
+    animation-duration: 1s;
+    
+}
+
+.prode-marcasAuspiciantes p {
+    text-align: center;
+    font-size: 24px;
+}
+
+.prode-marcasLogo {
+    display: flex;
+    width: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5vw;
+
+}
+
+.prode-marcasLogo div {
+    max-width: 200px;
+    max-height: 200px;
+
+}
+
+
+/* ----------------------------FOOTER----------------------------- */
+
+footer {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    background-color: #264653;
+    height: 25vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.footer-name {
+    width: 100%;
+    background-color: #1e3d49;
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 90px;
+    color: #264653;
+    line-height: 0.8;
+    padding: 0;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 1;
+    height: 100%;
+    vertical-align: middle;
+
+}
+
+/*.footer-navMenu, .footer-socialMedia{
+    border: #2a9d8f 2px solid;
+}*/
+
+.footer-navMenu {
+    align-self: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: normal;
+    z-index: 20;
+}
+
+.footer-navMenu li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.footer-navMenu li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-navMenu li a:hover {
+    color: #1b6c8d;
+}
+
+.footer-socialMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+}
+
+.footer-socialMedia i:hover {
+    color: #1b6c8d;
+}
+
+/* -----------------------------MEDIA----------------------------- */
+
+@media only screen and (min-width: 1200px) {
+    .header-titulo>h1 {
+        font-size: 45px;
+    }
+
+    .header-menubar {
+        font-size: 20px;
+    }
+
+    .jumbo-h2 {
+        font-size: 50px;
+    }
+
+    .index-title-seccion>p {
+        font-size: 45px;
+    }
+
+    .index-img-description {
+        font-size: 20px;
+    }
+
+    .index-banner p {
+        font-size: 20px;
+    }
+
+    .footer-name {
+        font-size: 100px;
+    }
+
+    .footer-navMenu li,
+    i {
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .index-section-articles {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .big-item {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .jumbo-inside {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .jumbo-img-logo {
+        grid-column: 2;
+        grid-row: 1/5;
+
+    }
+
+    .countdown {
+        align-content: center;
+        text-align: center;
+        margin-left: 2vw;
+
+    }
+
+    .jumbo-h2 {
+        margin-right: 0;
+        margin-left: 2vw;
+        font-size: 4vw;
+    }
+
+    /*--------------MAIN EN PAG HISTORIA--------------*/
+
+    .historia-item p {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    /* Cambia el formato del jumbo tmb, para poner todo con una sola columna. Activa el countodown2. */
+   
+    body{
+        box-sizing: border-box;
+        width: 100vw;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: 100%;
+        align-items: stretch;
+        width: 100vw;
+    }
+
+    .header-titulo {
+        font-size: 3.5vw;
+    }
+
+    .header-menubar {
+        display: none;
+    }
+
+    .header-menu-oculto {
+        display: block;
+        align-self: center;
+        align-content: center;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .header-menu-oculto-container {
+        display: none;
+    }
+
+    .header-menu-oculto:hover>.header-menu-oculto-container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        text-decoration: none;
+        list-style: none;
+        background-color: #22114a;
+        opacity: 0.9;
+        position: absolute;
+        margin-left: -135px;
+        margin-top: 21px;
+        padding: 30px;
+        text-align: left;
+        transition: 2s;
+        font-size: 20px;
+    }
+
+    .header-menu-oculto-container li {
+        padding: 5px;
+    }
+
+    .jumbo {
+        height: 85%;
+        width: 100vw;
+    }
+
+    .jumbo-inside {
+        max-height: 100%;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 100%;
+        align-content: center;
+    }
+
+    .jumbo-h2 {
+        font-size: 30px;
+    }
+
+    .countdown {
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .countdown-2 {
+        display: inline;
+        padding: 0;
+        margin-left: 2vw;
+        text-align: center;
+        justify-self: end;
+
+    }
+
+    .countdown-1 {
+        display: none;
+    }
+
+    .jumbo-img-logo {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        align-self: stretch;
+        justify-self: center;
+        max-height: 300px;
+    }
+
+    
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 1;
+       /* overflow: hidden;*/
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    .index-title-seccion{
+        max-width: 1;
+        box-sizing: border-box;
+        margin: 0 5px
+    }
+
+    .index-section-articles {
+        width: 1;
+        grid-template-columns: 1fr;
+        margin: 0 10px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .index-section-article-item {
+        grid-column: 1/2;
+        width: 1;
+        box-sizing: border-box;
+        padding: 2vw;
+        margin: 0;
+    }
+
+    .index-img {
+        max-width: 1;
+        max-height: 1;
+        object-fit: contain;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .index-banner{
+        max-width: 1;
+        display: flex;
+        flex-direction: column;
+        height: 45vh;
+    }
+
+    .index-banner img{
+        max-height: 25vh;
+    }
+
+    .index-section-2{
+        max-width: 100vw;
+    }
+
+    footer,
+    .footer-container {
+        width: 100vw;
+    }
+
+    
+
+
+
+    /*--------------- EN PAG HISTORIA--------------*/
+
+    .historia-titulo {
+        margin: 2vw;
+        margin-bottom: -30px;
+    }
+
+    .historia-titulo p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .historia-contenedor {
+        column-gap: 4vw;
+    }
+
+    .historia-item {
+        max-height: 280px;
+    }
+
+    .historia-item p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+
+}
+
+
+@keyframes expandButton {
+    from {
+        background-color: transparent;
+    }
+
+    to {
+        background-color: #e76f51;
+        transition-duration: 0.1s;
+        color: #fff;
+        transform: scale(1.3);
+
+    }
+}
